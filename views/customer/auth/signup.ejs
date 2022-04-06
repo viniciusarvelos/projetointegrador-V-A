@@ -5,7 +5,37 @@
     <main>
         <h1>Criar Nova Conta</h1>
         <form action="" method="">
-            
+            <p>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="confirm-email">Confirme seu E-Mail</label>
+                <input type="email" id="confirm-email" name="confirm-email" required>
+            </p>
+            <p>
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" minLength="6" required>
+            </p>
+            <hr>
+            <p>
+                <label for="fullname">Nome Completo</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+            <p>
+                <label for="street">Endereço</label>
+                <input type="text" id="street" name="street" required>
+            </p>
+            <p>
+                <label for="city">Cidade</label>
+                <input type="text" id="city" name="city" required>
+            </p>
+            <p>
+                <label for="postal">CEP</label>
+                <input type="text" id="postal" name="postal" minLength="8" maxLength="8" required>
+            </p>
+            <button class="btn">Criar Conta</button>
+            <p id="switch-form"><a href="/login">Logar</a></p>
         </form>
     </main>
 <%- include('../includes/footer') %>

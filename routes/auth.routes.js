@@ -1,4 +1,5 @@
 const express = require('express');
+
 const req = require('express/lib/request');
 
 const authController = require('../controllers/auth.controller');
@@ -9,4 +10,4 @@ router.get('/signup', authController.getSignup);
 
 router.get('/login', authController.getLogin);
 
-modulee.exports = router;
+module.exports = router;
