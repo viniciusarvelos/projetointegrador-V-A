@@ -1,0 +1,26 @@
+{
+  "name": "projetointegrador-v-a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusarvelos/projetointegrador-V-A.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusarvelos/projetointegrador-V-A/issues"
+  },
+  "homepage": "https://github.com/viniciusarvelos/projetointegrador-V-A#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
