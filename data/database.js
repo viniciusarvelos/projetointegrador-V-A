@@ -5,11 +5,11 @@ const MongoClient = mongodb.MongoClient;
 let database;
 
 async function connectToDatabase() {
-    const clinet = await MongoClient.connect('mongodb://localhost:27017');
+    const client = await MongoClient.connect('mongodb+srv://viniciusarvelos:6L9CZ4ps2F4pTQXX@cluster0.7jpzu.mongodb.net/online-shop?retryWrites=true&w=majority');
     database = client.db('online-shop');
 }
 
-function getDB() {
+function getDb() {
     if (!database) {
         throw new Error('Você precisa se conectar primeiro!');
     }
@@ -19,5 +19,5 @@ function getDB() {
 
 module.exports = {
     connectToDatabase: connectToDatabase,
-    getDB: getDB
+    getDb: getDb
 }
