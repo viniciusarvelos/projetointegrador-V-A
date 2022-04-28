@@ -73,7 +73,7 @@ async function signup(req, res, next) {
       sessionFlash.flashDataToSession(
         req,
         {
-          errorMessage: 'User exists already! Try logging in instead!',
+          errorMessage: 'Usuário já existe! Tente entrar em sua conta.',
           ...enteredData,
         },
         function () {
@@ -117,7 +117,7 @@ async function login(req, res, next) {
 
   const sessionErrorData = {
     errorMessage:
-      'Invalid credentials - please double-check your email and password!',
+      'Confirme seu e-mail e senha!',
     email: user.email,
     password: user.password,
   };

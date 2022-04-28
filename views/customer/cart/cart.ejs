@@ -5,7 +5,7 @@
 <body>
   <%- include('../../shared/includes/header') %>
   <main>
-    <h1>Your Cart</h1>
+    <h1>Seu carrinho</h1>
     <ul id="cart-items">
       <% for (const cartItem of locals.cart.items) { %>
         <li>
@@ -14,7 +14,7 @@
       <% } %>
     </ul>
     <div id="cart-total">
-      <p>Total: $<span id="cart-total-price"><%= locals.cart.totalPrice.toFixed(2) %></span></p>
+      <p>Total: R$ <span id="cart-total-price"><%= locals.cart.totalPrice.toFixed(2) %></span></p>
 
       <% if (locals.isAuth) { %>
         <form action="/orders" method="POST">
@@ -22,7 +22,7 @@
           <button class="btn">Buy Products</button>
         </form>
       <% } else { %>
-        <p id="cart-total-fallback">Log in to proceed and purchase the items.</p>
+        <p id="cart-total-fallback">Entre na sua conta para comprar produtos.</p>
       <% } %>
     </div>
   </main>
