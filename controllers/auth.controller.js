@@ -47,7 +47,7 @@ async function signup(req, res, next) {
       req,
       {
         errorMessage:
-          'Please check your input. Password must be at least 6 character slong, postal code must be 5 characters long.',
+          'Por favor confira o CEP. Deve ter 8 caracteres.',
         ...enteredData,
       },
       function () {

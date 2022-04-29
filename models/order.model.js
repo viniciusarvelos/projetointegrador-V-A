@@ -3,14 +3,14 @@ const mongodb = require('mongodb');
 const db = require('../data/database');
 
 class Order {
-  // Status => pending, fulfilled, cancelled
-  constructor(cart, userData, status = 'pending', date, orderId) {
+  // Status => pendente, complete, cancelada
+  constructor(cart, userData, status = 'pendente', date, orderId) {
     this.productData = cart;
     this.userData = userData;
     this.status = status;
     this.date = new Date(date);
     if (this.date) {
-      this.formattedDate = this.date.toLocaleDateString('en-US', {
+      this.formattedDate = this.date.toLocaleDateString('pt-BR', {
         weekday: 'short',
         day: 'numeric',
         month: 'long',
